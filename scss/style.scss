@@ -1,0 +1,19 @@
+$translate-distance: 14px;
+#burger__menu {
+  display: none;
+  &:checked + label {
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg) translateY($translate-distance);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateY(-$translate-distance);
+      }
+    }
+  }
+}
+

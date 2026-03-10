@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автопарк</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d; /*бордовий для кнопок меню*/
+        --color-button: #007dff;
+        --color-text: #ffffff;
+        --font-main: "Monserat";
+        --font-text: "Oswald";
+      }
+      @layer base {
+        .spn {
+          @apply block w-8 h-1 bg-black rounded-full transition-all duration-300;
+        }
+        .flx {
+          @apply flex flex-col;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="container mx-auto w-full bg-blue-500 flex justify-between items-center p-4 relative"
+    >
+      <div class="header__logo">
+        <a
+          class="button-logo max-w-[100px] md:max-w-[150px] lg:max-w-[200px] block"
+          href="/index.html"
+          ><img class="logo rounded-full" src="/image/logo.png" alt="Логотип"
+        /></a>
+      </div>
+
+      <div class="header__nav flex justify-end">
+        <input type="checkbox" id="burger__menu" class="peer hidden" />
+        <label
+          for="burger__menu"
+          class="flex flex-col gap-1.5 md:hidden cursor-pointer z-50"
+        >
+          <span class="spn"></span>
+          <span class="spn"></span>
+          <span class="spn"></span>
+        </label>
+        <nav
+          class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-blue-500 shadow-lg p-6 z-40 md:static md:flex md:flex-row md:w-auto md:shadow-none md:p-10"
+        >
+          <ul class="flx md:flex-row gap-15 font-medium">
+            <li>
+              <a href="./index.html" target="_blank" class="hover:text-clifford"
+                >Головна</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" target="_blank" class="hover:text-clifford"
+                >Автопарк</a
+              >
+            </li>
+            <li><a href="./index.html#conect" class="hover:text-clifford">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="text-4xl text-center mb-5">Наш автопарк:</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:grid-cols-3 gap-6 p-5"">
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_1.png"
+            alt="Авто автошколи"
+          />
+          <p class="font-text max-w-xs">
+            На чому ти будеш вчитися? Знайомся з нашими «залізними конями».
+          </p>
+        </div>
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_2.png"
+            alt="Авто автошколи   "
+          />
+          <p class="font-text max-w-xs">
+            Комфортні хетчбеки для тих, хто цінує маневреність та легкість у
+            керуванні.
+          </p>
+        </div>
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_3.png"
+            alt="Авто автошколи"
+          />
+          <p class="font-text max-w-xs">
+            Потужні кросовери для тих, хто хоче відчувати дорогу з високої
+            позиції.
+          </p>
+        </div>
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_5.png"
+            alt="Авто автошколи"
+          />
+          <p class="font-text max-w-xs">
+            Всі авто доглянуті, чисті та обладнані додатковими педалями для
+            твоєї повної безпеки.
+          </p>
+        </div>
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_4.png"
+            alt="Авто автошколи"
+          />
+          <p class="font-text max-w-xs">
+            Тут страх зникає, а з’являється азарт. Твої перші успішні маневри
+            відбудуться саме тут.
+          </p>
+        </div>
+        <div class="flx items-center text-center gap-1 m-3">
+          <img
+            class="max-w-[350px] rounded-lg"
+            src="./image/autopark_6.png"
+            alt="Авто автошколи"
+          />
+          <p class="font-text max-w-xs">
+            Відчуй свободу пересування. Більше ніяких маршруток — тільки ти і
+            дорога.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="border-t-4 flex flex-row justify-between w-full px-4 mx-auto"
+    >
+      <div class="flx">
+        <h5 class="text-basic font-main font-semibold gap-y-2">
+          Контакти автошколи «Фенікс»:
+        </h5>
+        <h6 class="text-sm">Адреса головного офісу:</h6>
+        <ul class="text-xs space-y-1 list-dis font-text">
+          <li class="">
+            Україна, м. Київ, вул. Михайла Драгоманова, 29 (ст. м. Позняки, 3-й
+            поверх, офіс 304).
+          </li>
+          <li class="">+38 (044) 123-45-67</li>
+          <li class="">info@yourdomain.com</li>
+          <li class="italic">&copy 2026 Всі права захищені.</li>
+        </ul>
+      </div>
+      <div class="hidden md:block">
+        <ul class="space-y-2 hover:cursor-pointer font-text">
+          <li class="underline hover:text-sky-500">
+            <a href="./index.html" target="_blank">Головна</a>
+          </li>
+          <li class="underline hover:text-sky-500">
+            <a href="./about.html" target="_blank">Автопарк</a>
+          </li>
+          <li class="underline hover:text-sky-500">
+            <a href="./index.html#conect" target="_blank">Контакти</a>
+          </li>
+          <li class="underline hover:text-sky-500">
+            <a href="./index.html#Reserve" target="_blank">Забронювати</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flx gap-2 hover:cursor-pointer hidden lg:block lg:flex mt-2">
+         <svg
+          class="text-[#333333] hover:text-sky-500"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.6 9.60002L10.8 14.4L18 21.6L22.8 2.40002L1.19995 10.8L5.99995 13.2L8.39995 20.4L12 15.6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <svg
+          class="text-[#333333] hover:text-sky-500"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_59_2392)">
+            <path
+              d="M1.20007 22.8137L3.18318 18.2465C1.666 16.0928 0.98694 13.4594 1.27344 10.8406C1.55994 8.22179 2.79231 5.79754 4.73927 4.02281C6.68623 2.24809 9.21394 1.24489 11.848 1.20148C14.4821 1.15808 17.0415 2.07745 19.0459 3.78706C21.0503 5.49668 22.3618 7.87901 22.7345 10.487C23.1071 13.0949 22.5152 15.7492 21.0698 17.9518C19.6244 20.1543 17.4248 21.7536 14.884 22.4496C12.3432 23.1456 9.63565 22.8904 7.26959 21.732L1.20007 22.8137"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.41125 9.59262C8.41125 9.752 8.47457 9.90485 8.58727 10.0176C8.69996 10.1303 8.85282 10.1936 9.0122 10.1936C9.17158 10.1936 9.32443 10.1303 9.43713 10.0176C9.54983 9.90485 9.61314 9.752 9.61314 9.59262V8.39074C9.61314 8.23136 9.54983 8.0785 9.43713 7.96581C9.32443 7.85311 9.17158 7.78979 9.0122 7.78979C8.85282 7.78979 8.69996 7.85311 8.58727 7.96581C8.47457 8.0785 8.41125 8.23136 8.41125 8.39074V9.59262ZM8.41125 9.59262C8.41125 11.1864 9.04439 12.7149 10.1714 13.8419C11.2984 14.9689 12.8269 15.602 14.4207 15.602H15.6226C15.7819 15.602 15.9348 15.5387 16.0475 15.426C16.1602 15.3133 16.2235 15.1605 16.2235 15.0011C16.2235 14.8417 16.1602 14.6889 16.0475 14.5762C15.9348 14.4635 15.7819 14.4002 15.6226 14.4002H14.4207C14.2613 14.4002 14.1084 14.4635 13.9957 14.5762C13.883 14.6889 13.8197 14.8417 13.8197 15.0011C13.8197 15.1605 13.883 15.3133 13.9957 15.426C14.1084 15.5387 14.2613 15.602 14.4207 15.602"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_59_2392">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <svg
+          class="text-[#333333] hover:text-sky-500"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 9.60001V14.4H9.6V22.8H14.4V14.4H18L19.2 9.60001H14.4V7.20001C14.4 6.88175 14.5264 6.57653 14.7515 6.35148C14.9765 6.12644 15.2817 6.00001 15.6 6.00001H19.2V1.20001H15.6C14.0087 1.20001 12.4826 1.83215 11.3574 2.95737C10.2321 4.08259 9.6 5.60871 9.6 7.20001V9.60001H6Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <svg
+          class="text-[#333333] hover:text-sky-500"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_59_2326)">
+            <path
+              d="M17.1764 1.64697H6.82344C3.96456 1.64697 1.64697 3.96456 1.64697 6.82344V17.1764C1.64697 20.0353 3.96456 22.3529 6.82344 22.3529H17.1764C20.0353 22.3529 22.3529 20.0353 22.3529 17.1764V6.82344C22.3529 3.96456 20.0353 1.64697 17.1764 1.64697Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 15.8824C14.1442 15.8824 15.8824 14.1442 15.8824 12C15.8824 9.85586 14.1442 8.11768 12 8.11768C9.85586 8.11768 8.11768 9.85586 8.11768 12C8.11768 14.1442 9.85586 15.8824 12 15.8824Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M17.8235 6.17645V6.17745"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_59_2326">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="hidden sm:block">
+        <img
+          class="max-w-[140px] rounded-full mix-blend-multiply"
+          src="./image/logo.png"
+          alt="Логотип"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
+
