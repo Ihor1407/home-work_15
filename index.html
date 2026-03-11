@@ -189,14 +189,14 @@
             документів, допомагаємо з реєстрацією на іспити та надаємо технічну
             підтримку. Ви ніколи не залишитеся наодинці зі своїми питаннями.
           </p>
-          <div class="biography__button flx md:flex-row md:justify-around">
+          <div class="biography__button flx ml-1 md:flex-row md:justify-around">
             <button
-              class="bg-sky-200 rounded-b-lg m-4 p-3 hover:bg-sky-700 cursor-pointer w-full md:max-w-[460px]"
+              class="bg-sky-200 rounded-b-lg m-4 p-3 hover:bg-sky-700 cursor-pointer md:w-full md:max-w-[450px]"
             >
               <a href="./index.html#conect"> Зв'язатися</a>
             </button>
             <button
-              class="bg-sky-200 rounded-b-lg m-4 p-3 hover:bg-sky-700 cursor-pointer w-full md:max-w-[460px]"
+              class="bg-sky-200 rounded-b-lg m-4 p-3 hover:bg-sky-700 cursor-pointer md:w-full md:max-w-[450px]"
             >
               <a href="./index.html#Reserve"> Забронювати місце</a>
             </button>
@@ -222,20 +222,22 @@
               >Введіть Ваше ім'я:</label
             >
             <input
-              class="border bg-white rounded p-2 focus:ring-4 outline-none"
+              class="border bg-white rounded p-2 focus:ring-4 outline-none invalid:border-red-500 invalid:text-red-600"
               type="text"
               id="user_name"
               name="name"
+              required
             />
           </div>
 
           <div class="flx mb-4">
             <label for="phone" class="mb-1 font-text">Номер телефону:</label>
             <input
-              class="border bg-white rounded p-2 focus:ring-4 outline-none"
+              class="border bg-white rounded p-2 focus:ring-4 outline-none invalid:border-red-500 invalid:text-red-600"
               type="tel"
               id="phone"
               name="phone"
+              required
             />
           </div>
 
@@ -258,7 +260,7 @@
         <div class="flx items-center text-center gap-5">
           <h2 class="text-4xl font-main">Наше місце знаходження:</h2>
           <iframe
-            class="mb-[20px] max-w-[350px] sm:max-w-xl"
+            class="mb-[20px] max-w-2xs sm:max-w-xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8345185438066!2d30.632947576434294!3d50.40053167158269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5acc964dcb9%3A0x351b76d9b5b58404!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCU0YDQsNCz0L7QvNCw0L3QvtCy0LAsIDI5LCDQmtC40ZfQsiwg0JrQuNGX0LLRgdGM0LrQsCwg0KPQutGA0LDRl9C90LAsIDAyMDY4!5e1!3m2!1suk!2sde!4v1773162356348!5m2!1suk!2sde"
             width="600"
             height="450"
